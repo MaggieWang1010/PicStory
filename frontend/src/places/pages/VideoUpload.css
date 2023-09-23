@@ -1,0 +1,51 @@
+.form-control {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-upload {
+  width: 80%; /* Adjust the width as needed */
+  max-width: 600px; /* Set a maximum width for larger screens */
+  margin: 0 auto; /* Center the video horizontally */
+}
+
+.video-upload-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .video-upload-form input[type="file"] {
+    margin-bottom: 1rem;
+  }
+  
+  .video-upload__preview {
+    width: 100%;
+    max-width: 300px; /* Set the maximum width of the video preview */
+    margin-bottom: 1rem;
+  }
+  
+  .video-upload__preview video {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .video-upload-form button {
+    margin-top: 1rem;
+  }
+  
+  @media (min-width: 768px) {
+    .video-upload-form {
+      width: 70%;
+    }
+  
+    .video-upload-preview video {
+      max-height: 400px;
+    }
+  }
+  
